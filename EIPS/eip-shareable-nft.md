@@ -31,7 +31,6 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 ```solidity
 import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 interface IERCsntNFT is IERC165 {
 
