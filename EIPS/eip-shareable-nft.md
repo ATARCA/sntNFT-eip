@@ -23,6 +23,8 @@ In ATARCA project we attempt to capture positive externalities in ecosystems wit
 
 These requirements have set us to define shareable non-transferable NFTs. These shareable NFTs can be “shared” in the same way digital goods can be shared, at an almost zero technical transaction cost. They are used to instantiate quantified anti-rival value, a medium of sharing. Hence, they work somewhat as money, being a store of value and a unit of account, but instead of being a medium of exchange, they are a medium of sharing.
 
+
+
 Typical NFT standards such as ERC-721 and ERC-1155 do not define a sharing modality. Instead ERC standards define user interfaces for typical rival use cases such as token minting and token transactions that the NFT contract implementations should fulfil. The ‘standard’ contract implementations may extend the functionalities beyond the definition of interfaces. The tokens developed in the ATARCA experiments are designed to be token standard compatible at the interface level. However the implementation of token contracts may contain extended functionalities to match the requirements of the experiments such as the requirement of 'shareability'. In reflection to standard token definitions, shareability of a token could be thought of as re-mintability of an existing token. Contracts define re-mintable non-transferable tokens which retain some reference to previous tokens upon and after re-minting.
 
 ## Specification
@@ -45,7 +47,11 @@ interface IERCsntNFT is IERC165 {
 
 ## Rationale
 
-- our design choices, why did we pick up ERC-721, thinking behind why are we suggesting specific technical design choises
+Current NFT standards define transferable non-fungible tokens. However to be able to create shareable NFTs we see that existing NFT contracts could be extended with an interface which defines the basic principles of sharing, namely the Event of sharing and the function method of sharing. In ATARCA we have chosen to go with shareable non-transferable NFTs which in our use case denote an award or merit for done effort. 
+
+Shareable tokens can be transferable or non-transferable as it is up to implementation details of the token contract. In the reference implementation we have a general case distilled from the ATARCA case that defines a shareable non-transferable NFTs using the shareable NFT interface.
+
+
 
 ## Backwards Compatibility
 
