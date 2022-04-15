@@ -3,7 +3,7 @@ eip: to-be-numberd
 title: Shareable non-transferable non-fungible token standard
 description: A standard interface for shareable non-transferable NFTs
 author: ATARCA team
-discussions-to: https://ethereum-magicians.org/t/shareable-non-transferrable-non-fungible-token-sntnft/8351
+discussions-to: https://ethereum-magicians.org/t/new-nft-concept-shareable-nfts/8681
 status: Draft
 type: Standards Track
 category: ERC
